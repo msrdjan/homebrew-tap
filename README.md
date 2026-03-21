@@ -2,4 +2,5 @@
 
 ```
 brew tap msrdjan/tap
+brew install qai
 ```

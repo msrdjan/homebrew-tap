@@ -1,15 +1,15 @@
 class Qai < Formula
   desc "Query AI CLI Claude Code, Gemini CLI, and Codex CLI sessions"
   homepage "https://github.com/msrdjan/qai"
-  version "0.5.0"
+  version "0.6.0"
   license "MIT"
 
   if Hardware::CPU.arm?
-    url "https://github.com/msrdjan/homebrew-tap/releases/download/qai-v0.5.0/qai-macos-arm64.tar.gz"
-    sha256 "cc0c0ce442f060370d41a3ab089fc6f9fe7a0a021ce88ecc392e0c9ff9645946"
+    url "https://github.com/msrdjan/homebrew-tap/releases/download/qai-v0.6.0/qai-macos-arm64.tar.gz"
+    sha256 "0bde57f752406e47f21bbdc9cbe80a6a542267ce7047bc98794cc33d08f04b14"
   else
-    url "https://github.com/msrdjan/homebrew-tap/releases/download/qai-v0.5.0/qai-macos-x86_64.tar.gz"
-    sha256 "8c850fc97b8a01d6fd03fb446dc8c1f3fbcee08c28c2200951037fa98cdf8a04"
+    url "https://github.com/msrdjan/homebrew-tap/releases/download/qai-v0.6.0/qai-macos-x86_64.tar.gz"
+    sha256 "36ddbefa099a9f70bb006fa67eb9471205a12e0d0e04941e603a06f10938222c"
   end
 
   def install

@@ -1,15 +1,15 @@
 class Sai < Formula
   desc "Scan AI coding assistants sessions for leaked secrets (Claude Code CLI, Gemini CLI, and Codex CLI)"
   homepage "https://github.com/msrdjan/sai"
-  version "0.3.0"
+  version "0.5.0"
   license "MIT"
 
   if Hardware::CPU.arm?
-    url "https://github.com/msrdjan/homebrew-tap/releases/download/sai-v0.3.0/sai-macos-arm64.tar.gz"
-    sha256 "fb71aa3ae4ce345a8fe4bf2438c51a1e712d658fe848631752ef7c0d528f2b55"
+    url "https://github.com/msrdjan/homebrew-tap/releases/download/sai-v0.5.0/sai-macos-arm64.tar.gz"
+    sha256 "28951178c5b17c8544b43d5940db5b160dade6e7ccfb7c21a6f711cfe6544927"
   else
-    url "https://github.com/msrdjan/homebrew-tap/releases/download/sai-v0.3.0/sai-macos-x86_64.tar.gz"
-    sha256 "7c673ae1392d475645c3dbae10eaafbaaec73a72e5a01cf34ec454dca29ff95b"
+    url "https://github.com/msrdjan/homebrew-tap/releases/download/sai-v0.5.0/sai-macos-x86_64.tar.gz"
+    sha256 "9fc74c9c20fc1f49ddfa6a79ff2ec60a826755d7355cf090f6c028e990fb380b"
   end
 
   def install
@@ -20,6 +20,6 @@ class Sai < Formula
   end
 
   test do
-    assert_match "sai 0.3.0", shell_output("#{bin}/sai --version")
+    assert_match "sai 0.5.0", shell_output("#{bin}/sai --version")
   end
 end
